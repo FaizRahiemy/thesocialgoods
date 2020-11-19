@@ -1,0 +1,320 @@
+html{
+    box-sizing:border-box
+}
+*,*:before,*:after{
+    box-sizing:inherit
+}
+html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+html,body{
+    background: #fff;
+    font-family:verdana;
+    color: #14293D;
+    font-size:15px;
+    margin:0;
+    padding: 0;
+    width : 100%;
+    min-height: 100%;
+    margin-bottom: -180px;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%; /* the bottom margin is the negative value of the footer's height */
+}
+html{
+    overflow-x:hidden
+}
+
+#container{
+    z-index: 0;
+    margin-top: 130px;
+}
+
+#header{
+    width:100%;
+    height:130px;
+    position:fixed;
+    background-color: white;
+    z-index:0;
+    top : 0;
+    background: rgba(255, 255, 255, 0.9);
+    
+	text-align : center;
+        
+    transition: width 0.5s;
+}
+
+#header img{
+	max-width : 150px;
+	margin-top : 15px;
+	margin-bottom : 10px;
+}
+
+#menucontainer{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 13px;
+	text-align : left;
+    height: 10px;
+}
+
+#menuitem{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: inline;
+    width: 70px;
+}
+
+#menuitem a{
+    text-decoration: none;
+}
+
+#menuitem a:hover{
+    color: dimgray;
+}
+
+.blackmenu a{
+    color: black;
+}
+
+.redmenu a{
+    color: red;
+}
+
+.push{
+    clear: both;
+    height: 190px;
+}
+
+#footer{
+    clear: both;
+    border-top: 3px solid black;
+    background-color: #87CEEC;
+    width: 100%;
+    height: 180px;
+    color: #ECF0F1;
+    text-align: left;
+    bottom: 0px;
+    padding-top: 20px;
+    padding-left: 100px;
+    font-size: 13px;
+}
+
+#sosmed a{
+    font-family: faiz;
+    font-size: 28px;
+    color: #ECF0F1;
+    text-decoration:none;
+    
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#sosmed a:hover{
+    color: #14293D;
+}
+
+#copyright a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+#copyright a:hover{
+    color: white;
+}
+
+#footerleft{
+    width: 30%;
+    display: inline-block;
+    color: white;
+}
+
+#navcontainer{
+    margin-top: 20px;
+    margin: 0px;
+    width: 100%;
+    height: 605px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid black;
+}
+
+.navitem{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.navitem img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.navitem50{
+    height: 600px;
+}
+
+.navitem50v{
+    height: 300px;
+}
+
+.navitem25{
+    width: 25%;
+    height: 300px;
+}
+
+.navitem:hover{
+    -webkit-filter: grayscale(80%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(80%); /* FF 35+ */
+    -webkit-transition : -webkit-filter 200ms linear;
+}
+
+#newarrival{
+    float: left;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newarrivaltitle{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#newarrivalcatcontainer{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newarrivalcat{
+    display: inline;
+    margin-right: 10px;
+}
+
+.newarrivalcat a{
+    color: black;
+    text-decoration: none;
+}
+
+.newarrivalcat:hover a{
+    color: grey;
+}
+
+#arrivalitemcontainer{
+    width: 100%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.arrivalitem{
+    float: left;
+    display: inline-block;
+    width: 150px;
+    height: 230px;
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.arrivalitemtitle{
+    font-size: 15px;
+}
+
+.arrivalitemimg{
+    float: left;
+    display: inline-block;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrivalitemimg img{
+    left: 50%;
+    top: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.arrivalitem a{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.itemimg{
+    float: left;
+    margin-top: 20px;
+    width: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.itemimg img{
+    left: 50%;
+    top: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#itemdesccontainer{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#itemdesc{
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#buttoncontainer{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#buttoncontainer a{
+    color: white;
+    text-decoration: none;
+}
+
+#button{
+    display: inline;
+    align-self: center;
+    margin-top: 20px;
+    margin-right: 15px;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-color: #87CEEC;
+}
+
+#button:hover{
+    background-color: dodgerblue;
+}
