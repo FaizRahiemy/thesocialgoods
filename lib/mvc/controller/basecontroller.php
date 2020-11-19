@@ -17,8 +17,8 @@ abstract class basecontroller {
     public $controllerName;
 //    public $baseUrl = "http://localhost/faiz/";
     public $baseUrl = "http://localhost/thesocialgoodstsg/";
-    public $siteCaptcha = "6LcePAATAAAAABjXaTsy7gwcbnbaF5XgJKwjSNwT";
-    public $secretCaptcha = "6Ldq0wsUAAAAAMhEn6VjA0hc1G1jM0TyCz_YQ29x";
+    public $siteCaptcha = "locked";
+    public $secretCaptcha = "locked";
 
     public function __construct($action, $urlParams, $id) {
         $this->action = $action;
